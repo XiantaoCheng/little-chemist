@@ -1,0 +1,94 @@
+{ 
+    
+    "Backgrounds":[
+        {
+            "type": "image",
+            "key": "background",
+            "url": "assets/GUI/backgrounds/background.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "base",
+            "url": "assets/GUI/backgrounds/base.png",
+            "overwrite": false
+        },
+
+        {
+            "type": "image",
+            "key": "beaker",
+            "url": "assets/GUI/backgrounds/beaker.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "box",
+            "url": "assets/GUI/backgrounds/box.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "space",
+            "url": "assets/GUI/backgrounds/space.png",
+            "overwrite": false
+        }
+        
+    ],
+    
+    "Buttons":[
+        {
+            "type": "image",
+            "key": "cButton",
+            "url": "assets/GUI/buttons/C_Action.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "pButton",
+            "url": "assets/GUI/buttons/P_Action.png",
+            "overwrite": false
+        }
+    ],
+
+    "Objects":[
+        {
+            "type": "image",
+            "key": "solid",
+            "url": "assets/GUI/objects/solid.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "liquid",
+            "url": "assets/GUI/objects/liquid.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "gas",
+            "url": "assets/GUI/objects/gas.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "energy",
+            "url": "assets/GUI/objects/Energy.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "object",
+            "url": "assets/GUI/objects/Object.png",
+            "overwrite": false
+        }
+        
+    ]
+}
