@@ -4,35 +4,35 @@
         {
             "type": "image",
             "key": "background",
-            "url": "assets/GUI/backgrounds/background.png",
+            "url": "assets/GUI/backgrounds/Background.png",
             "overwrite": false
         },
         
         {
             "type": "image",
             "key": "base",
-            "url": "assets/GUI/backgrounds/base.png",
+            "url": "assets/GUI/backgrounds/Base.png",
             "overwrite": false
         },
 
         {
             "type": "image",
             "key": "beaker",
-            "url": "assets/GUI/backgrounds/beaker.png",
+            "url": "assets/GUI/backgrounds/Beaker.png",
             "overwrite": false
         },
         
         {
             "type": "image",
             "key": "box",
-            "url": "assets/GUI/backgrounds/box.png",
+            "url": "assets/GUI/backgrounds/Box.png",
             "overwrite": false
         },
         
         {
             "type": "image",
             "key": "space",
-            "url": "assets/GUI/backgrounds/space.png",
+            "url": "assets/GUI/backgrounds/Space.png",
             "overwrite": false
         }
         
@@ -58,21 +58,21 @@
         {
             "type": "image",
             "key": "solid",
-            "url": "assets/GUI/objects/solid.png",
+            "url": "assets/GUI/objects/Solid.png",
             "overwrite": false
         },
         
         {
             "type": "image",
             "key": "liquid",
-            "url": "assets/GUI/objects/liquid.png",
+            "url": "assets/GUI/objects/Liquid.png",
             "overwrite": false
         },
         
         {
             "type": "image",
             "key": "gas",
-            "url": "assets/GUI/objects/gas.png",
+            "url": "assets/GUI/objects/Gas.png",
             "overwrite": false
         },
         

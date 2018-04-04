@@ -165,6 +165,7 @@ class CBox
     Renew()
     {
         var i=0;
+        var name;
         var style={font:"bold 16px Arial",fill:"#fff"};
 
         for(i=0;i<this.m_items.length;i++)
@@ -176,7 +177,8 @@ class CBox
             }
             if(this.m_items[i].m_textImage===undefined)
             {
-                this.m_items[i].m_textImage=game.add.text(0,0,this.m_items[i].m_name,style);
+                name=this.Translate(this.m_items[i]);
+                this.m_items[i].m_textImage=game.add.text(0,0,name,style);
                 this.m_image.addChild(this.m_items[i].m_textImage);
             }
             this.m_items[i].m_image.x=20;
@@ -184,6 +186,36 @@ class CBox
             this.m_items[i].m_textImage.x=120;
             this.m_items[i].m_textImage.y=i*this.m_height-this.m_startHeight+30;
         }
+    }
+
+    //补丁：显示的时候条件的名字显示出来
+    Translate(object)
+    {
+        var name=object.m_name;
+        if(object.m_state==='energy')
+        {
+            if(object.m_name==='f')
+            {
+                name='Ignite';
+            }
+            else if(object.m_name==='B')
+            {
+                name='Discharge';
+            }
+            else if(object.m_name==='H')
+            {
+                name='Heat';
+            }
+            else if(object.m_name==='HT')
+            {
+                name='Extreme Heat';
+            }
+            else if(object.m_name==='P')
+            {
+                name='High Pressure';
+            }
+        }
+        return name;
     }
 
     Scroll(n,direction)
