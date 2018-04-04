@@ -4,7 +4,7 @@
         {
             "type": "image",
             "key": "background",
-            "url": "assets/GUI/backgrounds/Background.png",
+            "url": "assets/GUI/backgrounds/Background1.png",
             "overwrite": false
         },
         
