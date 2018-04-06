@@ -171,10 +171,10 @@ function InitializeButton()
     ResizeSprite(button_toBase,70,70);
     button_toBeaker=game.add.button(70,530,'Button_toBeaker',Shift2Beaker,this);
     ResizeSprite(button_toBeaker,70,70);
-    button_up=game.add.button(750,0,'Button_up',Clear,this);
+    button_up=game.add.button(750,0,'Button_up');
     ResizeSprite(button_up,250,20,1);
     button_up.onInputDown.add(ScrollUp);
-    button_down=game.add.button(750,580,'Button_down',Clear,this);
+    button_down=game.add.button(750,580,'Button_down');
     ResizeSprite(button_down,250,20,1);
     button_down.onInputDown.add(ScrollDown);
     button_action=game.add.button(44,523,'Button_action',Reaction,this);
