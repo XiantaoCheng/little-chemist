@@ -21,24 +21,25 @@ class CBox
         this.InputThing('FeS2','s');
         this.InputThing('Al2O3','s');
         this.InputThing('CaCO3','s');
-        this.InputThing('CaSiO3','s');
-        this.InputThing('CaSO4','s');
-        this.InputThing('Na2SiO3','s');
+//        this.InputThing('CaSiO3','s');
+//        this.InputThing('CaSO4','s');
+//        this.InputThing('Na2SiO3','s');
         this.InputThing('SiO2','s');
         this.InputThing('Na3AlF6','s');
         this.InputThing('V2O5','s');
         this.InputThing('C','s');
-        this.InputThing('Fe','s');
-        this.InputThing('Al','s');
+//        this.InputThing('Fe','s');
+//        this.InputThing('Al','s');
         this.InputThing('H2O','l');
         this.InputThing('O2','g');
-        this.InputThing('H2','g');
+//        this.InputThing('H2','g');
         this.InputThing('N2','g');
         this.InputThing('f','e');
         this.InputThing('H','e');
         this.InputThing('HT','e');
         this.InputThing('B','e');
         this.InputThing('P','e');
+        this.InputThing('Clear','e');
     }
 
     Input(item)
@@ -227,24 +228,24 @@ class CBox
 
         if(direction===true)
         {
-            if(start+space*n+scale<total)
+            if(start+space*n+scale<total+10)
             {
                 start+=space*n;
             }
             else
             {
-                start=total-scale;
+                start=total-scale+10;
             }
         }
         else
         {
-            if(start-space*n>0)
+            if(start-space*n>-10)
             {
                 start-=space*n;
             }
             else
             {
-                start=0;
+                start=-10;
             }
         }
 

@@ -62,6 +62,8 @@ function create()
     keyLeft.onDown.add(ShiftL,this);
     keySpace.onDown.add(Reaction,this);
     keyC.onDown.add(Clear,this);
+
+    InitializeButton();
 }
 
 function update()
@@ -120,4 +122,63 @@ function Clear()
         var infoPage=document.getElementById('beaker-information');
         infoPage.innerHTML=beaker.Information(1);
     }
+}
+
+var button_toBase;
+var button_toBeaker;
+var button_up;
+var button_down;
+var button_action;
+var button_synthesis;
+
+function Shift2Base()
+{
+    if(userScreen.m_screenMode!=2)
+    {
+        userScreen.SwitchScreen(2);
+    }
+    else
+    {
+        userScreen.SwitchScreen(0)
+    }
+}
+
+function Shift2Beaker()
+{
+    if(userScreen.m_screenMode!=1)
+    {
+        userScreen.SwitchScreen(1);
+    }
+    else
+    {
+        userScreen.SwitchScreen(0)
+    }
+}
+
+function ScrollDown()
+{
+    box.Scroll(30,true);
+}
+
+function ScrollUp()
+{
+    box.Scroll(30,false);
+}
+
+function InitializeButton()
+{
+    button_toBase=game.add.button(0,530,'Button_toBase',Shift2Base,this);
+    ResizeSprite(button_toBase,70,70);
+    button_toBeaker=game.add.button(70,530,'Button_toBeaker',Shift2Beaker,this);
+    ResizeSprite(button_toBeaker,70,70);
+    button_up=game.add.button(750,0,'Button_up',Clear,this);
+    ResizeSprite(button_up,250,20,1);
+    button_up.onInputDown.add(ScrollUp);
+    button_down=game.add.button(750,580,'Button_down',Clear,this);
+    ResizeSprite(button_down,250,20,1);
+    button_down.onInputDown.add(ScrollDown);
+    button_action=game.add.button(44,523,'Button_action',Reaction,this);
+    beaker.m_image.addChild(button_action);
+    button_synthesis=game.add.button(640,242,'Button_synthesis',Reaction,this);
+    base.m_image.addChild(button_synthesis);
 }

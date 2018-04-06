@@ -41,15 +41,43 @@
     "Buttons":[
         {
             "type": "image",
-            "key": "cButton",
+            "key": "Button_action",
             "url": "assets/GUI/buttons/C_Action.png",
             "overwrite": false
         },
         
         {
             "type": "image",
-            "key": "pButton",
+            "key": "Button_synthesis",
             "url": "assets/GUI/buttons/P_Action.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "Button_toBase",
+            "url": "assets/GUI/buttons/ToBase.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "Button_toBeaker",
+            "url": "assets/GUI/buttons/ToBeaker.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "Button_up",
+            "url": "assets/GUI/buttons/Up.png",
+            "overwrite": false
+        },
+        
+        {
+            "type": "image",
+            "key": "Button_down",
+            "url": "assets/GUI/buttons/Down.png",
             "overwrite": false
         }
     ],

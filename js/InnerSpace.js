@@ -33,7 +33,7 @@ class CInnerSpace
 
         this.m_drag=drag_mode;
         this.m_name=name;
-        this.m_environment=['f'];
+        this.m_environment=[];
 
         this.m_solute=[];
 
@@ -343,6 +343,11 @@ class CInnerSpace
     Input_Energy(energy)
     {
         var i;
+        if(energy.m_name==='Clear')
+        {
+            this.m_environment=[];
+            return 1;
+        }
         for(i=0;i<this.m_environment.length;i++)
         {
             if(energy.m_name==this.m_environment[i])
