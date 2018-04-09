@@ -129,6 +129,11 @@ class CInnerSpaceP
             }
             info=info+'<br/>\n';
         }
+        info=info+'<br/>\n';
+        info=info+'<br/>\n';
+        info=info+'<br/>\n';
+        info=info+'<br/>\n';
+        info=info+'<br/>\n';
 
         return info;
     }
